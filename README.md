@@ -3,7 +3,10 @@
 
 
 <details><summary>Скриншоты</summary>
+  
 ![Screenshot](https://raw.githubusercontent.com/Alterys/BankingApp/main/screenshots/auth.png)
+  
 ![Screenshot](https://raw.githubusercontent.com/Alterys/BankingApp/main/screenshots/menu.png)
-  ![Screenshot](https://raw.githubusercontent.com/Alterys/BankingApp/main/screenshots/convert.png)
+
+![Screenshot](https://raw.githubusercontent.com/Alterys/BankingApp/main/screenshots/convert.png)
 </details>
