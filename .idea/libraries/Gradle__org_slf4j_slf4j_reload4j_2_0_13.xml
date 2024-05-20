@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: org.slf4j:slf4j-reload4j:2.0.13" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.slf4j" artifactId="slf4j-reload4j" version="2.0.13" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-reload4j/2.0.13/e8de9f981349fee84f8d708cd0ed2337d193faed/slf4j-reload4j-2.0.13.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
