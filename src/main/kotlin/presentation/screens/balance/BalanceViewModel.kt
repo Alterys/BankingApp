@@ -54,7 +54,7 @@ class BalanceViewModel(
         if (hasFractionalPart) return "канадский доллоров"
         return if (intValue in BigDecimal("11")..BigDecimal("14") || intValue in exceptions) "канадских долларов"
         else when (lastDigit) {
-            BigDecimal.ONE -> "канадский долларов"
+            BigDecimal.ONE -> "канадский доллар"
             in BigDecimal("2")..BigDecimal("4") -> "канадских доллара"
             else -> "канадских долларов"
         }

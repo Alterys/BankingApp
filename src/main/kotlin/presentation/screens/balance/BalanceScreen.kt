@@ -157,7 +157,7 @@ fun BalanceScreen(
                                     Text(
                                         text = "Пополнить",
                                         color = BankColors.textBold,
-                                        fontWeight =  FontWeight.Bold,
+                                        fontWeight = FontWeight.Bold,
                                         fontSize = 14.sp
                                     )
                                 }
@@ -218,7 +218,7 @@ fun BalanceScreen(
                                     Text(
                                         text = "Пополнить",
                                         color = BankColors.textBold,
-                                        fontWeight =  FontWeight.Bold,
+                                        fontWeight = FontWeight.Bold,
                                         fontSize = 14.sp
                                     )
                                 }
@@ -278,67 +278,67 @@ fun BalanceScreen(
                                     Text(
                                         text = "Пополнить",
                                         color = BankColors.textBold,
-                                        fontWeight =  FontWeight.Bold,
+                                        fontWeight = FontWeight.Bold,
                                         fontSize = 14.sp
                                     )
                                 }
                             }
                         }
-                        if (chf != BigDecimal.ZERO) {
-                            Box(
-                                modifier = Modifier
-                                    .padding(10.dp)
-                                    .width(600.dp)
-                                    .height(50.dp)
-                                    .shadow(
-                                        0.dp,
-                                        RoundedCornerShape(24.dp),
-                                        clip = false
-                                    )
-                                    .clip(shape = RoundedCornerShape(25.dp))
-                                    .border(
+                    }
+                    if (chf != BigDecimal.ZERO) {
+                        Box(
+                            modifier = Modifier
+                                .padding(10.dp)
+                                .width(600.dp)
+                                .height(50.dp)
+                                .shadow(
+                                    0.dp,
+                                    RoundedCornerShape(24.dp),
+                                    clip = false
+                                )
+                                .clip(shape = RoundedCornerShape(25.dp))
+                                .border(
+                                    width = 2.dp,
+                                    color = BankColors.focusedBorderColor,
+                                    shape = RoundedCornerShape(25.dp)
+                                ),
+                            contentAlignment = Alignment.Center
+                        ) {
+                            Row(
+                                modifier = Modifier.fillMaxWidth().padding(8.dp),
+                                verticalAlignment = Alignment.CenterVertically,
+                                horizontalArrangement = Arrangement.SpaceBetween
+                            ) {
+                                Text(
+                                    modifier = Modifier,
+                                    text = "CHF: $chf ${chooseFrancForm(chf)}",
+                                    color = BankColors.textField,
+                                    textAlign = TextAlign.Center,
+                                    fontSize = 18.sp
+                                )
+                                OutlinedButton(
+                                    modifier = Modifier
+                                        .width(160.dp)
+                                        .clip(shape = RoundedCornerShape(25.dp)),
+                                    onClick = {
+                                        navigate(
+                                            it["login"].toString(),
+                                            it["balanceId"].toString().toInt(),
+                                            "CHF",
+                                        )
+                                    },
+                                    shape = RoundedCornerShape(25.dp),
+                                    border = BorderStroke(
                                         width = 2.dp,
                                         color = BankColors.focusedBorderColor,
-                                        shape = RoundedCornerShape(25.dp)
-                                    ),
-                                contentAlignment = Alignment.Center
-                            ) {
-                                Row(
-                                    modifier = Modifier.fillMaxWidth().padding(8.dp),
-                                    verticalAlignment = Alignment.CenterVertically,
-                                    horizontalArrangement = Arrangement.SpaceBetween
+                                    )
                                 ) {
                                     Text(
-                                        modifier = Modifier,
-                                        text = "CHF: $chf ${chooseFrancForm(chf)}",
-                                        color = BankColors.textField,
-                                        textAlign = TextAlign.Center,
-                                        fontSize = 18.sp
+                                        text = "Пополнить",
+                                        color = BankColors.textBold,
+                                        fontWeight = FontWeight.Bold,
+                                        fontSize = 14.sp
                                     )
-                                    OutlinedButton(
-                                        modifier = Modifier
-                                            .width(160.dp)
-                                            .clip(shape = RoundedCornerShape(25.dp)),
-                                        onClick = {
-                                            navigate(
-                                                it["login"].toString(),
-                                                it["balanceId"].toString().toInt(),
-                                                "CHF",
-                                            )
-                                        },
-                                        shape = RoundedCornerShape(25.dp),
-                                        border = BorderStroke(
-                                            width = 2.dp,
-                                            color = BankColors.focusedBorderColor,
-                                        )
-                                    ) {
-                                        Text(
-                                            text = "Пополнить",
-                                            color = BankColors.textBold,
-                                            fontWeight =  FontWeight.Bold,
-                                            fontSize = 14.sp
-                                        )
-                                    }
                                 }
                             }
                         }
@@ -360,12 +360,11 @@ fun BalanceScreen(
                             Text(
                                 text = "Добавить другие валюты",
                                 color = BankColors.textBold,
-                                fontWeight =  FontWeight.Bold,
+                                fontWeight = FontWeight.Bold,
                                 fontSize = 18.sp
                             )
                         }
                     }
-
                 }
             }
             if (screenState.onDialog) {
