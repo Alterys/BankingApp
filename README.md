@@ -1,4 +1,4 @@
-![image](https://github.com/Alterys/BankingApp/assets/113447896/c8361421-54af-4455-8dad-b5bc6b210d0b)![image](https://github.com/Alterys/BankingApp/assets/113447896/f1e03ae3-7f02-4acd-9b95-b213047255c3)![image](https://github.com/Alterys/BankingApp/assets/113447896/75683d55-fa53-4595-ad64-ee15852af1ca)## Банковское приложение
+## Банковское приложение
 >  Используется язык программирования Kotlin, набор инструментов Jetpack Compose, библиотека Retrofit, библиотека Exposed, система для автоматической сборки приложений Gradle
 
 
